@@ -73,3 +73,8 @@ python3 cloud_predict.py
 ```
 
 * TODO
+```
+curl -X POST http://localhost:9696/predict \
+-H 'Content-Type: application/json' \
+-d '{"vehicle_class": "subcompact", "engine_size": "1.5", "cylinders": 3, "fuel_consumption_city": 9, "fuel_consumption_hwy": "6.3", "fuel_consumption_comb_mpg": "38"}'
+```
