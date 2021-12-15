@@ -1,12 +1,40 @@
 ## Project info 
-TODO
-
+In the this project we're predicting Co^2 emissions for car. Giving some car feautres such as cylinders, engine size, transmission etc, caltucalting CO2 emissions.
 
 
 ## Data And Variable
+### Model ###
+
+4WD/4X4 = Four-wheel drive
+AWD = All-wheel drive
+FFV = Flexible-fuel vehicle
+SWB = Short wheelbase
+LWB = Long wheelbase
+EWB = Extended wheelbase
+
+### Transmission ###
+
+A = Automatic
+AM = Automated manual
+AS = Automatic with select shift
+AV = Continuously variable
+M = Manual
+3 - 10 = Number of gears
+### Fuel type ###
+
+X = Regular gasoline
+Z = Premium gasoline
+D = Diesel
+E = Ethanol (E85)
+N = Natural gas
+
+### Fuel Consumption ###
 
 
-**Data and variable source**:  [Kaggle](https://www.kaggle.com/debajyotipodder/co2-emission-by-vehicles)
+City and highway fuel consumption ratings are shown in litres per 100 kilometres (L/100 km) - the combined rating (55% city, 45% hwy) is shown in L/100 km and in miles per gallon (mpg)
+
+
+**Data and variable explanation source**:  [Kaggle](https://www.kaggle.com/debajyotipodder/co2-emission-by-vehicles)
 
 
 
@@ -64,17 +92,28 @@ docker run -it --rm -p 9696:9696 capstone
 ```bash
 python3 predict_test.py
 ```
-*  TODO
+*  We can use predict_test.py file or we can use curl utility
+
+```bash
+curl -X POST http://localhost:9696/predict \
+-H 'Content-Type: application/json' \
+-d '{"vehicle_class": "subcompact", "engine_size": "1.5", "cylinders": 3, "fuel_consumption_city": 9, "fuel_consumption_hwy": "6.3", "fuel_consumption_comb_mpg": "38"}'
+```
 
 > Cloud test. `cloud_predict.py` contains server endpoint.
 
 ```bash
 python3 cloud_predict.py
 ```
-
-* TODO
+* cloud deployment I choose Azure. Screnshoot contanins endpoint and returning predictions.
 ```
-curl -X POST http://localhost:9696/predict \
+curl -X POST https://ml-capstone.azurewebsites.net/predict \
 -H 'Content-Type: application/json' \
 -d '{"vehicle_class": "subcompact", "engine_size": "1.5", "cylinders": 3, "fuel_consumption_city": 9, "fuel_consumption_hwy": "6.3", "fuel_consumption_comb_mpg": "38"}'
 ```
+
+* I choose Azure for cloud deployment. Screnshoot contanins endpoint and returning predictions.)
+
+![Screenshot](cloud.png)
+
+
