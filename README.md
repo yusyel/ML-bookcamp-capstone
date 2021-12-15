@@ -1,5 +1,5 @@
 ## Project info 
-In the this project we're predicting Co^2 emissions for car. Giving some car feautres such as cylinders, engine size, transmission etc, predicting CO2 emissions.
+In this project we're predicting Co^2 emissions for car. Giving some car feautres such as cylinders, engine size, transmission etc, predicting CO2 emissions.
 
 
 ## Data And Variable
