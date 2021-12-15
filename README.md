@@ -116,3 +116,4 @@ curl -X POST https://ml-capstone.azurewebsites.net/predict \
 ![Screenshot](cloud.png)
 
 
+![Video](cloud.webm)
