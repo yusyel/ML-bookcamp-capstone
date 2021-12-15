@@ -91,7 +91,7 @@ docker run -it --rm -p 9696:9696 capstone
 ```bash
 python3 predict_test.py
 ```
-*  We can use predict_test.py file or we can use curl utility. [Tanks to Carolina.](https://github.com/diascarolina/project-insurance-forecast)
+*  We can use predict_test.py file or we can use curl utility. [Thanks to Carolina.](https://github.com/diascarolina/project-insurance-forecast)
 
 ```bash
 curl -X POST http://localhost:9696/predict \
