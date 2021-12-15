@@ -118,4 +118,4 @@ curl -X POST https://ml-capstone.azurewebsites.net/predict \
 
 ![Video](cloud.mp4)
 
-https://github.com/yusyel/ML-bookcamp-capstone/blob/master/cloud.mp4
+https://raw.githubusercontent.com/yusyel/ML-bookcamp-capstone/master/cloud.mp4
