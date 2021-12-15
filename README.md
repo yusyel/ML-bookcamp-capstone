@@ -40,8 +40,7 @@ City and highway fuel consumption ratings are shown in litres per 100 kilometres
 
 ## File Descriptions
 
-* `notebook.ipynb`  Notebook contains data  preparation, EDA, feature importance, parameter tuning and  model selection.
-* `train.py` Python file contains best model and saving model file. (<i>Exported script</i>)
+* `notebook.ipynb`  Notebook contains data  preparation, EDA, parameter tuning,model selection and saving model.
 * `predict.py` Python file contains model file and serving as Flask app.
 * `predict_test.py` Python file contains one observation for probility and CHD risk result. **(local solution)**
 * `cloud_predict.py ` Python file contains model for one observation and includes cloud endpoint. **(cloud solution)**
@@ -92,7 +91,7 @@ docker run -it --rm -p 9696:9696 capstone
 ```bash
 python3 predict_test.py
 ```
-*  We can use predict_test.py file or we can use curl utility
+*  We can use predict_test.py file or we can use curl utility. [Tanks to Carolina.](https://github.com/diascarolina/project-insurance-forecast)
 
 ```bash
 curl -X POST http://localhost:9696/predict \
@@ -106,7 +105,7 @@ curl -X POST http://localhost:9696/predict \
 python3 cloud_predict.py
 ```
 * cloud deployment I choose Azure. Screnshoot contanins endpoint and returning predictions.
-```
+```bash
 curl -X POST https://ml-capstone.azurewebsites.net/predict \
 -H 'Content-Type: application/json' \
 -d '{"vehicle_class": "subcompact", "engine_size": "1.5", "cylinders": 3, "fuel_consumption_city": 9, "fuel_consumption_hwy": "6.3", "fuel_consumption_comb_mpg": "38"}'
