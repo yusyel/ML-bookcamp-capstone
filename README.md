@@ -42,7 +42,7 @@ City and highway fuel consumption ratings are shown in litres per 100 kilometres
 
 * `notebook.ipynb`  Notebook contains data  preparation, EDA, parameter tuning,model selection and saving model.
 * `predict.py` Python file contains model file and serving as Flask app.
-* `predict_test.py` Python file contains one observation for probility and CHD risk result. **(local solution)**
+* `predict_test.py` Python file contains one observation for CO2 emissions. **(local solution)**
 * `cloud_predict.py ` Python file contains model for one observation and includes cloud endpoint. **(cloud solution)**
 * `requirements.txt` Txt file contains all dependencies  for notebook.ipynb and predictions scripts. 
 
