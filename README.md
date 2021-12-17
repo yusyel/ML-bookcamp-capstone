@@ -111,7 +111,7 @@ curl -X POST https://ml-capstone.azurewebsites.net/predict \
 -d '{"vehicle_class": "subcompact", "engine_size": "1.5", "cylinders": 3, "fuel_consumption_city": 9, "fuel_consumption_hwy": "6.3", "fuel_consumption_comb_mpg": "38"}'
 ```
 
-* I choose Azure for cloud deployment. Screnshoot contanins endpoint and returning predictions.)
+* I choose Azure for cloud deployment. Screnshoot contanins endpoint and returning predictions.
 
 ![Screenshot](cloud.png)
 
